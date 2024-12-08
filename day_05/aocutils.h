@@ -36,11 +36,6 @@ inline std::string substr(std::string s, int start, int end) {
   return ret;
 }
 
-template <typename T> inline std::ostream & operator<<(std::ostream &os, const std::pair<T, T> &p){
-    os << "(" << p.first << ", " << p.second << ")";
-    return os;
-}
-
 template <class T> inline std::ostream &operator<<(std::ostream &os, std::vector<T> vec) {
   for (T it : vec) {
     os << it << " ";
